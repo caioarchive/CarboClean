@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Projeto - CarboClean</title>
+
+  <link rel="stylesheet" href="./style.css" />
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Header e Navbar-->
+  <header>
+    <nav>
+      <div class="nav_logo">
+        <a href="#">
+          <h2 style="color: #4CAF4F;">CarboClean</h2>
+        </a>
+      </div>
+
+      <input type="checkbox" id="click" />
+      <label for="click">
+        <i class="menu_btn bx bx-menu"></i>
+        <i class="close_btn bx bx-x"></i>
+      </label>
+
+      <ul>
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#Sobre">Sobre</a></li>
+        <li><a href="#service">Serviços</a></li>
+        <li><a href="#beneficios">Porque nós</a></li>
+        <li><a href="./locationMaps/index.html"><button class="button-Novousuario">Acesse-se</button></a></li>
+
+
+      </ul>
+    </nav>
+  </header>
+  <div id="progresso">
+    <a href="#Inicio" id="value-progresso">
+      <span> &#x1F815
+      </span>
+    </a>
+
+  </div>
+  <!-- Login FOrm -->
+  <div class="blur-background">
+  </div>
+  <div class="login-form">
+    <span class="fechar-btn material-icons">close</span>
+    <div class="form-box login">
+      <div class="form-detalhes">
+        <h2>
+          Sejam bem-vindo
+        </h2>
+        <p>Serviço que permite aos pais monitorarem o comportamento dos alunos em sala de aula, com acesso detalhado a
+          relatórios enviados pelos professores.</p>
+      </div>
+      <div class="form-content">
+        <h2>
+          Login
+        </h2>
+        <form action="#">
+          <div class="input-entrada">
+            <input type="text" required>
+            <label>Email</label>
+          </div>
+          <div class="input-entrada">
+            <input type="password" required>
+            <label>Passoword</label>
+          </div>
+          <a href="#" class="esquecer-senha">Esquecer senha</a>
+          <button class="coloo" type="button" onclick="window.location.href='adminpanel2-master/index.html';">
+            Login
+          </button>
+        </form>
+        <div class="bottom-link">
+          Ainda não é nosso cliente?!
+          <br>
+          <a href="#" id="signup-link">Registre-se</a>
+        </div>
+      </div>
+    </div>
+    <div class="form-box registrar">
+      <div class="form-detalhes">
+        <h2>
+          Criar sua conta
+        </h2>
+        <p>Serviço que permite aos pais monitorarem o comportamento dos alunos em sala de aula, com acesso detalhado a
+          relatórios enviados pelos professores.</p>
+      </div>
+      <div class="form-content">
+        <h2>
+          Criar conta
+        </h2>
+        <form action="#">
+          <div class="input-entrada">
+            <input type="text" required>
+            <label>Digite seu email</label>
+          </div>
+          <div class="input-entrada">
+            <input type="password" required>
+            <label>Crie sua senha</label>
+          </div>
+          <div class="politica-texto">
+            <input type="checkbox">
+            <label for="politica">
+              Aceita todos os <a href="">termos & condinções</a>
+            </label>
+          </div>
+          <button class="coloo" type="button" onclick="window.location.href='adminpanel2-master/index.html';">Criar conta</button>
+        </form>
+        <div class="bottom-link">
+          Já possui uma conta?
+          <br>
+          <a href="#" id="login-link">Login</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- inicio Section -->
+  <section class="inicio_section" id="Inicio">
+    <div class="section_container">
+      <div class="inicio_container">
+        <div class="text_section">
+          <!-- <h2>FollowUP</h2> -->
+          <h3>Lessons and insights <strong style="color: #4CAF4F;">from 8 years</strong></h3>
+          <p>
+            Where to grow your business as a photographer: site or social media?
+          </p>
+
+          <div class="inicio_section_button">
+            <button class="button" id="buttonlogin">Entrar</button>
+            <button class="button" id="buttonRegistrar">Cadastrar</button>
+          </div>
+        </div>
+
+        <div class="image_section">
+
+          <img src="images/4705030-removebg-preview.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="sobre" id="Sobre">
+    <div class="section_container">
+      <div class="sobre_container">
+        <div class="text_section">
+          <h2 class="section_title">Sobre</h2>
+          <p>
+            Follow-up é um aplicativo acadêmico que busca auxiliar os pais e responsáveis por estudantes, sejam eles de
+            escolas da rede pública ou privada do Ensino Fundamental I, Ensino Fundamental II e Ensino Médio. A
+            instituição de ensino inserida pelo estudante ofereceráo aplicativo Follow-Up para os responsáveis buscandoa
+            praticidade na atenção no trabalhode cuidado dos pais com seus filhos.
+          </p>
+        </div>
+
+        <div class="image_section">
+
+          <img src="images/Design sem nome/1.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="service">
+    <h2 class="section_title">Nossos serviços</h2>
+    <div class="section_container">
+      <div class="service_container">
+       <div class="services_items">
+      <div class="card">
+          <div class="img-box">
+            <img src="./images/economic-disparities_5347661.png">
+          </div>
+        <div class="content">
+            <h2>Lorem ipsum</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus molestias minus porro. Deserunt dolore eligendi sapiente hic totam.
+            </p>
+            <a href="#" class="read-more">
+                Read more
+            </a>
+        </div>
+    </div>
+      </div>
+      <div class="services_items">
+        <div class="card">
+          <div class="img-box">
+            <img src="./images/ecosystem_5347520 (1).png">
+          </div>
+        <div class="content">
+            <h2>Lorem ipsum</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus molestias minus porro. Deserunt dolore eligendi sapiente hic totam.
+            </p>
+            <a href="#" class="read-more">
+                Read more
+            </a>
+        </div>
+    </div>
+      </div>
+      <div class="card">
+        <div class="img-box">
+          <img src="./images/eco-bulb_5347645.png">
+        </div>
+      <div class="content">
+          <h2>Lorem ipsum</h2>
+          <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus molestias minus porro. Deserunt dolore eligendi sapiente hic totam.
+          </p>
+          <a href="#" class="read-more">
+              Read more
+          </a>
+      </div>
+  </div>
+  <div class="card">
+    <div class="img-box">
+      <img src="./images/battery_5347276.png">
+    </div>
+  <div class="content">
+      <h2>Lorem ipsum</h2>
+      <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Temporibus molestias minus porro. Deserunt dolore eligendi sapiente hic totam.
+      </p>
+      <a href="#" class="read-more">
+          Read more
+      </a>
+  </div>
+</div>
+<div class="card">
+  <div class="img-box">
+    <img src="./images/energy-saving_5347651.png">
+  </div>
+<div class="content">
+    <h2>Lorem ipsum</h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Temporibus molestias minus porro. Deserunt dolore eligendi sapiente hic totam.
+    </p>
+    <a href="#" class="read-more">
+        Read more
+    </a>
+</div>
+</div>
+<div class="card">
+  <div class="img-box">
+    <img src="./images/environment-protection_5347494.png ">
+  </div>
+<div class="content">
+    <h2>Lorem ipsum</h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Temporibus molestias minus porro. Deserunt dolore eligendi sapiente hic totam.
+    </p>
+    <a href="#" class="read-more">
+        Read more
+    </a>
+</div>
+</div>
+ 
+
+  </section>
+
+  <!-- beneficios -->
+  <section class="beneficios" id="beneficios">
+    <h2 class="section_title">Por que escolher a gente?</h2>
+    <div class="section_container">
+      <div class="beneficios_container">
+        <div class="beneficios_items">
+          <img src="images/protecao.png" alt="" />
+          <div class="beneficios_text">
+            <h3>Segurança Garantida:</h3>
+            <p>
+              Proteção total das informações, garantindo a privacidade dos dados de alunos e responsáveis. Mais
+              segurança e tranquilidade para todos.
+            </p>
+          </div>
+        </div>
+        <div class="beneficios_items">
+          <img src="images/trabalho-em-rede.png" alt="" />
+          <div class="beneficios_text">
+            <h3>Inovação Tecnológica:</h3>
+            <p>
+              Escolas na vanguarda, utilizando tecnologia de ponta para fortalecer a comunicação e o vínculo com os
+              responsáveis.
+            </p>
+          </div>
+        </div>
+        <div class="beneficios_items">
+          <img src="images/estoque-pronto.png" alt="" />
+          <div class="beneficios_text">
+            <h3>Acessibilidade Simples</h3>
+            <p>
+              Design intuitivo que todos podem usar facilmente, mesmo quem não é familiar com tecnologia. Acompanhe a
+              vida escolar de forma prática e direta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avaliações -->
+  
+  <main id="testimonials">
+      <div id="testimonials_header">
+          <h1>Avaliações</h1>
+          <h2>
+              O que os clientes dizem
+          </h2>
+          <p>
+              Quer saber o que torna a nossa marca tão especial?
+              Confira o que nossos clientes têm a dizer!
+          </p>
+      </div>
+
+      <div class="swiper">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="testimonial-rate">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                  </div>
+
+                  <blockquote class="testimonial-quote">
+                      "Experiência incrível! Desde o primeiro contato, fui muito bem atendido e recebi 
+          todas as informações de forma clara. Recomendo para todos!"
+                  </blockquote>
+
+                  <div class="testimonial-author">
+                      <div class="author-avatar">
+                          <img src="images/Design sem nome/4.jpg" alt="Imagem de uma pessoa">
+                      </div>
+
+                      <div class="author-info">
+                          <h3>Fulano de Tal</h3>
+                          <p>Cliente desde 2020</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="testimonial-rate">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                  </div>
+
+                  <blockquote class="testimonial-quote">
+                      "Experiência incrível! Desde o primeiro contato, fui muito bem atendido e recebi 
+          todas as informações de forma clara. Recomendo para todos!"
+                  </blockquote>
+
+                  <div class="testimonial-author">
+                      <div class="author-avatar">
+                          <img src="images/Design sem nome/3.jpg" alt="Imagem de uma pessoa">
+                      </div>
+
+                      <div class="author-info">
+                          <h3>Fulano de Tal</h3>
+                          <p>Cliente desde 2020</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="testimonial-rate">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                  </div>
+
+                  <blockquote class="testimonial-quote">
+                      "Experiência incrível! Desde o primeiro contato, fui muito bem atendido e recebi 
+          todas as informações de forma clara. Recomendo para todos!"
+                  </blockquote>
+
+                  <div class="testimonial-author">
+                      <div class="author-avatar">
+                          <img src="images/Design sem nome/2.jpg" alt="Imagem de uma pessoa">
+                      </div>
+
+                      <div class="author-info">
+                          <h3>Fulano de Tal</h3>
+                          <p>Cliente desde 2020</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide">
+                  <div class="testimonial-rate">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                  </div>
+
+                  <blockquote class="testimonial-quote">
+                      "Experiência incrível! Desde o primeiro contato, fui muito bem atendido e recebi 
+          todas as informações de forma clara. Recomendo para todos!"
+                  </blockquote>
+
+                  <div class="testimonial-author">
+                      <div class="author-avatar">
+                          <img src="images/Design sem nome/1.jpg" alt="Imagem de uma pessoa">
+                      </div>
+
+                      <div class="author-info">
+                          <h3>Fulano de Tal</h3>
+                          <p>Cliente desde 2020</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-pagination "></div>
+      
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+  </main>
+
+  
+
+
+  <!-- Contato -->
+  <section class="contact" id="contact">
+    <h2 class="section_title">Envie uma mensagem para gente!</h2>
+    <div class="section_container">
+      <div class="contact_container">
+        <div class="contact_form">
+          <form action="#">
+            <div class="field">
+              <label for="Name">Nome</label>
+              <input type="text" id="Name" placeholder="Digite seu nome" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Digite seu email" required />
+            </div>
+            <div class="field">
+              <label for="number">Numero</label>
+              <input type="number" id="number" placeholder="Digite seu numero" required />
+            </div>
+            <div class="field">
+              <label for="textarea">Envie uma mensagem...</label>
+              <textarea name="textarea" id="textarea" placeholder="Envie uma mensagem para gente"></textarea>
+            </div>
+
+            <button class="button" id="submit">Enviar</button>
+          </form>
+        </div>
+
+        <div class="contact_text">
+          <div class="contact_items">
+            <i class="bx bx-current-location"></i>
+            <div class="contact_details">
+              <h3>Nossa localização</h3>
+              <p>Maceio, Alagoas</p>
+            </div>
+          </div>
+          <div class="contact_items">
+            <i class="bx bxs-envelope"></i>
+            <div class="contact_details">
+              <h3>Email para contato</h3>
+              <p>FollowUP@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact_items">
+            <i class="bx bxs-phone-call"></i>
+            <div class="contact_details">
+              <h3>Numero para contato</h3>
+              <p>+55(82)92728239</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="section_container">
+      <div class="footer_section">
+        <div class="footer_logo">
+          <a href="index.html">
+            <!-- LOGO <img src="" alt="LOGO" />
+              <h2>LOGO</h2> -->
+          </a>
+        </div>
+
+        <div class="nossos_links">
+          <h3>Nossos links</h3>
+          <ul>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#service">Serviços</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#gallery">Avaliações</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="contact_us">
+          <h3>Onde encontrar a gente?</h3>
+          <ul>
+            <li>
+              <i class="bx bx-current-location"></i>
+              <span>Maceio, alagoas</span>
+            </li>
+            <li>
+              <i class="bx bxs-phone-call"></i> <span>+55(82)92728239</span>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="follow_us">
+          <h3>Midias sociais</h3>
+          <i class="bx bxl-facebook-circle"></i>
+          <i class='bx bxl-github'></i>
+          <i class="bx bxl-instagram-alt"></i>
+          <i class='bx bxl-youtube'></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
