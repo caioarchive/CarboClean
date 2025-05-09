@@ -9,7 +9,7 @@ const branches = [
   
   },
   {
-    name: "SESI BIU PAPAI",
+    name: "Sesi Senai",
     lat: -9.551300214985362,
     lng: -35.734613942468606,
     
@@ -39,18 +39,11 @@ branches.forEach(branch => {
 });
 
 function showInfo(branch) {
-    document.getElementById("info").innerHTML=`
+  document.getElementById("info").innerHTML = `
     <div class="info-item">
-    <h3>${branch.name}</h3>
-    <p>
-    <strong>Address:</strong>
-    ${branch.address}
-    </p>
-    <p>
-    <strong>Phone:</strong>
-    ${branch.phone}
-    </p>
-
+      <h3>${branch.name}</h3>
+      <p><strong>Endereço:</strong> ${branch.address}</p>
+      <p><strong>Telefone:</strong> ${branch.phone}</p>
     </div>
-    `
+  `;
 }
