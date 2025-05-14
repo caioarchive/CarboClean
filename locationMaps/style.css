@@ -21,6 +21,81 @@
     flex: 2;
     height: 100%;
   }
+  .community-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .community-header h2 {
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .community-header p {
+    max-width: 700px;
+    margin: 10px auto 40px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  .community-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .card-content h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  
+  .card-content a {
+    color: #4caf4f;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.3s ease;
+  }
+  
+  .card-content a span {
+    margin-left: 6px;
+    transition: margin-left 0.2s;
+  }
+  
+  .card-content a:hover span {
+    margin-left: 10px;
+  }
   
   #info {
     flex: 1;
